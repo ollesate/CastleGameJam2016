@@ -13,7 +13,6 @@ public class DimensionSwitchCamera : MonoBehaviour {
     private RotationLerper rotationLerper;
 
     public float animationDuration = .5f;
-    private bool is3D = true;
     private bool isAnimating;
 
     private float initialY;
@@ -28,21 +27,17 @@ public class DimensionSwitchCamera : MonoBehaviour {
         initialY = transform.position.y;
         initialXRotation = transform.eulerAngles.x;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKey(KeyCode.H) && !isAnimating) {
-            if (is3D) {
-                switchTo2D();
-            } else {
-                switchTo3D();
-            }
+
+    public void ChangeDimensions(bool is3d) {
+        if (is3d) {
+            switchTo3D();
+        } else {
+            switchTo2D();
         }
-	}
-    
+    }
+
     public void switchTo2D() {
         Debug.Log("Switching to 2D");
-        is3D = false;
         Globals.Is3D = false;
 
         positionLerper.LerpTo(new Vector3(transform.position.x, 0, transform.position.z), animationDuration);
@@ -62,7 +57,6 @@ public class DimensionSwitchCamera : MonoBehaviour {
 
     public void switchTo3D() {
         Debug.Log("Switching to 3D" );
-        is3D = true;
         Globals.Is3D = true;
 
         positionLerper.LerpTo(new Vector3(transform.position.x, initialY, transform.position.z), animationDuration);
