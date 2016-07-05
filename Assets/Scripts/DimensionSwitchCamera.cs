@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts;
 
 public class DimensionSwitchCamera : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class DimensionSwitchCamera : MonoBehaviour {
     private Quaternion initialRotation;
 	// Use this for initialization
 	void Start () {
+        Globals.Is3D = true;
         initialPosition = transform.position;
         initialRotation = transform.rotation;
         cam = GetComponent<Camera>();
@@ -23,8 +25,9 @@ public class DimensionSwitchCamera : MonoBehaviour {
         }
 
 	}
-
+    
     public void switchTo2D() {
+        Globals.Is3D = false;
         cam.orthographic = true;
         Vector3 eulerRot = cam.transform.rotation.eulerAngles;
         cam.transform.rotation = Quaternion.Euler(new Vector3(0, eulerRot.y, eulerRot.z));
@@ -33,6 +36,7 @@ public class DimensionSwitchCamera : MonoBehaviour {
     }
 
     public void switchTo3D() {
+        Globals.Is3D = true;
         cam.orthographic = false;
         cam.transform.rotation = initialRotation;
         Debug.Log("Switching to 3D euler" );

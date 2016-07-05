@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts;
 
 public class PlayerControll : MonoBehaviour {
 	public float speed = 4.0f;
@@ -32,7 +33,7 @@ public class PlayerControll : MonoBehaviour {
 	void Update () {
 		
 		float xInputAxis = (Input.GetAxis ("Horizontal"));
-		float zInputAxis = (Input.GetAxis ("Vertical"));
+		float zInputAxis = Globals.Is3D ? Input.GetAxis ("Vertical") : 0f;
 
 		if (controller.isGrounded) {
 			moveDirection = new Vector3 (xInputAxis, 0, zInputAxis);
