@@ -22,15 +22,12 @@ public class PlatformScript : MonoBehaviour {
 	}
 
 	public void ChangeDimension(bool is3d){
-        if (is3d) {
-            return;
-        }
 		if (platformColliders.Length < 3) {
 			Debug.LogError("The GameObject has not enough box colliders, it needs at least 3 to be a legit plattform.");
 			return;
 		}
-		platformColliders [1].enabled = enabled;
-		platformColliders [2].enabled = enabled;
+		platformColliders [1].enabled = !is3d;
+		platformColliders [2].enabled = !is3d;
 	}
 
 		
