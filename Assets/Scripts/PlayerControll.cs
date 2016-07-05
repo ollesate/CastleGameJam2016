@@ -77,7 +77,7 @@ public class PlayerControll : MonoBehaviour {
 	void OnTriggerEnter (Collider col)
 	{
 		Debug.Log ("test3");
-		if(col.gameObject.tag == "platform")
+        if (col.gameObject.tag == "platform" || col.gameObject.tag == "death")
 		{
 			//Set Death animation
 			Debug.Log("test");

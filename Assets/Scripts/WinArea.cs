@@ -8,7 +8,6 @@ public class WinArea : MonoBehaviour {
     {
         if (col.gameObject.name == "Player")
             Win();
-
     }
 
     void Win()
