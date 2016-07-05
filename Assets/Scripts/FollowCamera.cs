@@ -21,7 +21,7 @@ public class FollowCamera : MonoBehaviour {
 	
 	void Update () {
 	    if (target == null) {
-            Debug.LogError("Follow camera has no target!");
+            Debug.LogWarning("Follow camera has no target!");
             return;
         }
         transform.position = new Vector3(target.transform.position.x - xDiff, target.transform.position.y - yDiff, transform.position.z);
