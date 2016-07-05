@@ -85,9 +85,4 @@ public class PlayerControll : MonoBehaviour {
 			//Game end
 		}
 	}
-
-
-
-
 } 
-

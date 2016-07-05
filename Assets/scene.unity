@@ -325,6 +325,10 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1258546323}
+    - target: {fileID: 11402560, guid: f2a1c99cbc373b04b8e1360595947b21, type: 2}
+      propertyPath: animationDuration
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2a1c99cbc373b04b8e1360595947b21, type: 2}
   m_IsPrefabParent: 0
@@ -625,6 +629,14 @@ Prefab:
     - target: {fileID: 198192, guid: ce2e8b51f06664d679d4a40e3a128e26, type: 2}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 198192, guid: ce2e8b51f06664d679d4a40e3a128e26, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 14394356, guid: ce2e8b51f06664d679d4a40e3a128e26, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce2e8b51f06664d679d4a40e3a128e26, type: 2}
