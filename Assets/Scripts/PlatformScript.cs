@@ -21,13 +21,13 @@ public class PlatformScript : MonoBehaviour {
 		platformColliders = platform.GetComponents<Collider>();
 	}
 
-	public void ChangeDimension(bool enabled){
+	public void ChangeDimension(bool is3d){
 		if (platformColliders.Length < 3) {
 			Debug.LogError("The GameObject has not enough box colliders, it needs at least 3 to be a legit plattform.");
 			return;
 		}
-		platformColliders [1].enabled = enabled;
-		platformColliders [2].enabled = enabled;
+		platformColliders [1].enabled = !is3d;
+		platformColliders [2].enabled = !is3d;
 	}
 
 		
