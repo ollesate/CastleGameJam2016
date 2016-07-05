@@ -3,13 +3,10 @@ using System.Collections;
 
 public class PlatformManager : MonoBehaviour {
 
-	GameObject[] platformArray;
 	public bool enabled3d = true;
 
 	// Use this for initialization
 	void Start () {
-		//Get all platforms
-		platformArray = GameObject.FindGameObjectsWithTag("platform");
 
 	}
 
@@ -27,12 +24,10 @@ public class PlatformManager : MonoBehaviour {
 
 	void ChangeDimensions (bool is3d) {
 		enabled3d = is3d;
-		foreach (GameObject platform in platformArray) {
-			platform.GetComponent<PlatformScript>().ChangeDimension(is3d);
+        PlatformScript[] platformArray = GetComponentsInChildren<PlatformScript>();
+		foreach (PlatformScript platform in platformArray) {
+			platform.ChangeDimension(is3d);
 		}
 	}
-
-
-
 
 }
