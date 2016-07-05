@@ -37,7 +37,6 @@ public class DimensionSwitchCamera : MonoBehaviour {
     }
 
     public void switchTo2D() {
-        Debug.Log("Switching to 2D");
         Globals.Is3D = false;
 
         positionLerper.LerpTo(new Vector3(transform.position.x, 0, transform.position.z), animationDuration);
@@ -56,7 +55,6 @@ public class DimensionSwitchCamera : MonoBehaviour {
     }
 
     public void switchTo3D() {
-        Debug.Log("Switching to 3D" );
         Globals.Is3D = true;
 
         positionLerper.LerpTo(new Vector3(transform.position.x, initialY, transform.position.z), animationDuration);
