@@ -13,12 +13,12 @@ using System.Collections;
 public class PlatformScript : MonoBehaviour {
 
 	GameObject platform;
-	BoxCollider[] platformColliders;
+	Collider[] platformColliders;
 
 	// Use this for initialization
 	void Start () {
 		platform = this.gameObject;
-		platformColliders = platform.GetComponents<BoxCollider>();
+		platformColliders = platform.GetComponents<Collider>();
 	}
 
 	public void ChangeDimension(bool enabled){
