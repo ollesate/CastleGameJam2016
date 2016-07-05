@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlattformScript : MonoBehaviour {
+public class PlatformScript : MonoBehaviour {
 
-	GameObject plattform;
-	BoxCollider plattformCollider;
-
+	GameObject platform;
+	BoxCollider[] platformColliders;
 
 	// Use this for initialization
 	void Start () {
-		plattform = this.gameObject;
-		plattformCollider = plattform.GetComponent<BoxCollider>();
+		platform = this.gameObject;
+		platformColliders = platform.GetComponents<BoxCollider>();
 	}
 	
 	// Update is called once per frame
@@ -18,8 +17,8 @@ public class PlattformScript : MonoBehaviour {
 		
 	} //TODO: Remove update so it's not heavy? Check it up
 
-	void changeDimension(){
-		
+	public void ChangeDimension(bool enabled){
+		platformColliders[1].enabled = enabled;
 	}
 
 
