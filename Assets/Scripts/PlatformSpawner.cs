@@ -13,6 +13,8 @@ public class PlatformSpawner : MonoBehaviour {
 
     private float spawnDistance = 20;
 
+    private bool is3D;
+
 	// Use this for initialization
 	void Start () {
         initialZ = transform.position.z;
@@ -38,6 +40,19 @@ public class PlatformSpawner : MonoBehaviour {
     void Spawn(GameObject go, float z) {
         Next();
         GameObject spawn = (GameObject)Instantiate(go, new Vector3(transform.position.x, transform.position.y, z), transform.rotation);
+        PlatformScript [] ps  = spawn.GetComponentsInChildren<PlatformScript>();
+        if (ps.Length == 0) {
+            Debug.LogError("Spawned platform does not have a platform script. It is needed to toggle between 2d and 3d");
+        } else {
+            foreach (PlatformScript p in ps) {
+                p.ChangeDimension(is3D);
+            } 
+        }
+
         spawn.transform.parent = transform.parent;
+    }
+
+    public void ChangeDimensions(bool is3D) {
+        this.is3D = is3D;
     }
 }

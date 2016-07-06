@@ -16,7 +16,7 @@ public class PlatformScript : MonoBehaviour {
 	Collider[] platformColliders;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		platform = this.gameObject;
 		platformColliders = platform.GetComponents<Collider>();
 	}
