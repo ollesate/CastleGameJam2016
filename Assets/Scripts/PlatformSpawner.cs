@@ -5,19 +5,21 @@ using System.Collections.Generic;
 public class PlatformSpawner : MonoBehaviour {
 
     public Transform player;
-    public GameObject spawn1;
     public GameObject[] platforms;
 
     private float step = 14;
+    private float initialZ;
+
+    private float spawnDistance = 20;
 
 	// Use this for initialization
 	void Start () {
-	    
+        initialZ = transform.position.z;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	    if (Input.GetKeyDown(KeyCode.P)) {
+        if (player.position.x > transform.position.x - spawnDistance) {
             SpawnRandom();
         }
 	}
