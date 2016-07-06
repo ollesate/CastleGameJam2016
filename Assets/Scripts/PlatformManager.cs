@@ -9,7 +9,5 @@ public class PlatformManager : MonoBehaviour {
 		foreach (PlatformScript platform in platformArray) {
 			platform.ChangeDimension(is3d);
 		}
-
 	}
-
 }

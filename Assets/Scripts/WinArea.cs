@@ -15,17 +15,19 @@ public class WinArea : MonoBehaviour {
         Scene scene = SceneManager.GetActiveScene();
         int result;
         bool isNumber = int.TryParse(scene.name, out result);
-
+        Debug.Log(isNumber);
+        Debug.Log(result);
         if (isNumber)
         {
             try
             {
                 //you win
-                SceneManager.LoadScene(scene.name + 1);
+                SceneManager.LoadScene((result + 1).ToString());
             }
             catch (UnityException e)
             {
                 //fallback
+                Debug.Log("fallback scene manager");
                 SceneManager.LoadScene("MainMenu");
             }
         }
