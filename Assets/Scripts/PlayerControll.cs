@@ -119,9 +119,9 @@ public class PlayerControll : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col)
 	{
-		Debug.Log ("test3");
         if (col.gameObject.tag == "platform" || col.gameObject.tag == "spike")
 		{
+            Debug.Log("Player died because of a " + col.gameObject.tag + "collision");
             gameObject.SendMessage("Killed");
 		}
 	}

@@ -12,6 +12,7 @@ public class KillWhenBelow : MonoBehaviour {
             //random cgj-screamer
             if (transform.position.y < KillHeight)
             {
+                Debug.Log("Player falled to his death");
                 gameObject.SendMessage("Killed");
             }
         } 
