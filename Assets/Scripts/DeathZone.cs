@@ -11,7 +11,7 @@ public class DeathZone : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider) {
         if (collider.gameObject.tag == "Player") {
-            collision.gameObject.SendMessage("Killed");
+            collider.gameObject.SendMessage("Killed");
         }
     }
 }
