@@ -10,7 +10,7 @@ public class PositionLerper : MonoBehaviour {
 
     private IEnumerator LerpPosition(Vector3 src, Vector3 dest, float duration) {
         float startTime = Time.time;
-        Time.timeScale = 0.2f;
+        Time.timeScale = 0.1f;
         while (Time.time - startTime < duration) {
             transform.position = Vector3.Lerp(src, dest, (Time.time - startTime) / duration);
             yield return null;
