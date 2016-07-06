@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using System;
 
 public class PlayerControll : MonoBehaviour {
 	public float speed = 4.0f;
@@ -19,6 +20,7 @@ public class PlayerControll : MonoBehaviour {
 	private Vector3 moveDirection = Vector3.zero;
 
 	private CharacterController controller;
+    private Animator animator;
 
 	private bool is3d = true;
 	private Transform lastTouched=null;
@@ -32,6 +34,8 @@ public class PlayerControll : MonoBehaviour {
 		zSpeed = speed-zModifier;
 		zMaxAirSpeed = maxAirSpeed-zModifier;
 		controller = GetComponent<CharacterController> ();
+        //Animation
+        animator = GetComponent<Animator>();
 	}
 		
 	// Update is called once per frame
@@ -69,6 +73,8 @@ public class PlayerControll : MonoBehaviour {
 			//moveDirection *= speed;
 			moveDirection.y = tempY;
 		}
+
+        animator.SetFloat("Speed", Math.Abs(controller.velocity.x/4));
 
 		//Rotation towards vector direction
 

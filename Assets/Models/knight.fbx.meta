@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: 3d7063976062e55468b0bec3ce6bf68c
+timeCreated: 1467808863
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Cool Guy
+    100004: Cylinder
+    100006: Foot.L
+    100008: Foot.L_end
+    100010: Foot.R
+    100012: Foot.R_end
+    100014: Hand.L
+    100016: Hand.L_end
+    100018: Hand.R
+    100020: Hand.R_end
+    100022: Head
+    100024: Head_end
+    100026: //RootNode
+    100028: LowerArm.L
+    100030: LowerArm.R
+    100032: LowerLeg.L
+    100034: LowerLeg.R
+    100036: Neck
+    100038: Plane
+    100040: Shoulder.L
+    100042: Shoulder.R
+    100044: Torso
+    100046: UpperArm.L
+    100048: UpperArm.R
+    100050: UpperLeg.L
+    100052: UpperLeg.R
+    400000: Armature
+    400002: Cool Guy
+    400004: Cylinder
+    400006: Foot.L
+    400008: Foot.L_end
+    400010: Foot.R
+    400012: Foot.R_end
+    400014: Hand.L
+    400016: Hand.L_end
+    400018: Hand.R
+    400020: Hand.R_end
+    400022: Head
+    400024: Head_end
+    400026: //RootNode
+    400028: LowerArm.L
+    400030: LowerArm.R
+    400032: LowerLeg.L
+    400034: LowerLeg.R
+    400036: Neck
+    400038: Plane
+    400040: Shoulder.L
+    400042: Shoulder.R
+    400044: Torso
+    400046: UpperArm.L
+    400048: UpperArm.R
+    400050: UpperLeg.L
+    400052: UpperLeg.R
+    4300000: Cool Guy
+    4300002: Cylinder
+    4300004: Plane
+    7400000: Armature|Idle
+    7400002: Armature|Run
+    7400004: Armature|Walk
+    7400006: Cool Guy|Idle
+    7400008: Plane|Run
+    9500000: //RootNode
+    13700000: Cool Guy
+    13700002: Cylinder
+    13700004: Plane
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Torso
+        weight: 1
+      - path: Armature/Torso/Neck
+        weight: 1
+      - path: Armature/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Torso/Neck/Head/Head_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Cool Guy
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Run
+      takeName: Armature|Run
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Torso
+        weight: 1
+      - path: Armature/Torso/Neck
+        weight: 1
+      - path: Armature/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Torso/Neck/Head/Head_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Cool Guy
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Walk
+      takeName: Armature|Walk
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Torso
+        weight: 1
+      - path: Armature/Torso/Neck
+        weight: 1
+      - path: Armature/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Torso/Neck/Head/Head_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Cool Guy
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cool Guy|Idle
+      takeName: Cool Guy|Idle
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Torso
+        weight: 1
+      - path: Armature/Torso/Neck
+        weight: 1
+      - path: Armature/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Torso/Neck/Head/Head_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Cool Guy
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Plane|Run
+      takeName: Plane|Run
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Torso
+        weight: 1
+      - path: Armature/Torso/Neck
+        weight: 1
+      - path: Armature/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Torso/Neck/Head/Head_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/Torso/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Torso/Shoulder.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/Torso/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L
+        weight: 1
+      - path: Armature/Torso/UpperLeg.L/LowerLeg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R
+        weight: 1
+      - path: Armature/Torso/UpperLeg.R/LowerLeg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Cool Guy
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
