@@ -5,6 +5,7 @@ public class DimensionManager : MonoBehaviour {
 
     public PlatformManager platformManager;
     public DimensionSwitchCamera dimensionCamera;
+	public SpikeManager spikeManager;
 
     public bool is3D = true;
 
@@ -16,6 +17,10 @@ public class DimensionManager : MonoBehaviour {
         if (dimensionCamera == null) {
             Debug.LogError("Dimension manager needs a dimension camera to animate between 2D and 3D");
         }
+		if (spikeManager == null) {
+			Debug.LogError("Dimension manager needs a spike manager to switch behaviour on spikes");
+		}
+
 	}
 	
 	// Update is called once per frame
@@ -24,6 +29,7 @@ public class DimensionManager : MonoBehaviour {
             is3D = !is3D;
             platformManager.ChangeDimensions(is3D);
             dimensionCamera.ChangeDimensions(is3D);
+			spikeManager.ChangeDimensions (is3D);
         }
 	}
 }
