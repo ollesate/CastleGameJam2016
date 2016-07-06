@@ -116,6 +116,7 @@ MonoBehaviour:
   dimensionCamera: {fileID: 1607254778}
   spikeManager: {fileID: 543195314}
   player: {fileID: 1258546326}
+  platformSpawner: {fileID: 322870805}
   is3D: 1
 --- !u!4 &214743709
 Transform:
@@ -657,7 +658,7 @@ Transform:
   - {fileID: 505126077}
   - {fileID: 322870804}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1001 &1477191692
 Prefab:
   m_ObjectHideFlags: 0
