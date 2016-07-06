@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformManager: {fileID: 1262269645}
   dimensionCamera: {fileID: 1607254778}
+  spikeManager: {fileID: 543195314}
   is3D: 1
 --- !u!4 &214743709
 Transform:
@@ -324,6 +325,46 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 499938, guid: 8c7f86ffad92d104e9332fce5194ccc2, type: 2}
   m_PrefabInternal: {fileID: 505126076}
+--- !u!1 &543195313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 543195315}
+  - 114: {fileID: 543195314}
+  m_Layer: 0
+  m_Name: SpikeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &543195314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543195313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3d0acd0ccdd4942b98252c5f9f1cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &543195315
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543195313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.379843, y: -0.6226325, z: -1.8614372}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
 --- !u!1 &550228234
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +731,7 @@ Transform:
   - {fileID: 1242543369}
   - {fileID: 1953375270}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
 --- !u!1001 &1285885181
 Prefab:
   m_ObjectHideFlags: 0
@@ -843,6 +884,10 @@ Prefab:
     - target: {fileID: 404038, guid: 4610c29d8edcf3b469ea3baf5704dfda, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178452, guid: 4610c29d8edcf3b469ea3baf5704dfda, type: 2}
+      propertyPath: m_TagString
+      value: spike
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4610c29d8edcf3b469ea3baf5704dfda, type: 2}
