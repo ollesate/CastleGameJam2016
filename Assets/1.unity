@@ -401,6 +401,12 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 199058, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
   m_PrefabInternal: {fileID: 1324778861}
+--- !u!114 &970627945 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11499160, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1324778861}
+  m_Script: {fileID: 11500000, guid: 0be05effb25274b0fa2050c3093123ae, type: 3}
 --- !u!1001 &1151273696
 Prefab:
   m_ObjectHideFlags: 0
@@ -586,7 +592,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 445914, guid: 9e3ff4fb9648efd4fa78b2dd761b9289, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e3ff4fb9648efd4fa78b2dd761b9289, type: 2}
@@ -628,23 +634,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 417830, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 13753720, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
-      propertyPath: m_AABB.m_Center.x
-      value: -0.009933531
-      objectReference: {fileID: 0}
-    - target: {fileID: 13753720, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
-      propertyPath: m_AABB.m_Center.y
-      value: -1.0793372
-      objectReference: {fileID: 0}
-    - target: {fileID: 13753720, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
-      propertyPath: m_AABB.m_Center.z
-      value: -2.537903
-      objectReference: {fileID: 0}
-    - target: {fileID: 13753720, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
-      propertyPath: m_AABB.m_Extent.x
-      value: 0.9428164
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
@@ -687,7 +677,7 @@ MonoBehaviour:
   platformManager: {fileID: 1262269645}
   dimensionCamera: {fileID: 592345835}
   spikeManager: {fileID: 672411840}
-  player: {fileID: 0}
+  player: {fileID: 970627945}
   is3D: 1
 --- !u!4 &2081490244
 Transform:

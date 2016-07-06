@@ -111,10 +111,7 @@ public class PlayerControll : MonoBehaviour {
 		Debug.Log ("test3");
         if (col.gameObject.tag == "platform" || col.gameObject.tag == "spike")
 		{
-			//Set Death animation
-			Debug.Log("test");
-			Destroy(this.gameObject, 0); //TODO: Change to 2 when there's a death anim
-			//Game end
+            gameObject.SendMessage("Killed");
 		}
 	}
 } 
