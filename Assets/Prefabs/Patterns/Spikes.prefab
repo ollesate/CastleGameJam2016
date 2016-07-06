@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11435528}
   m_Layer: 0
   m_Name: spikes (3)
-  m_TagString: death
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +50,7 @@ GameObject:
   - 114: {fileID: 11420398}
   m_Layer: 0
   m_Name: spikes (2)
-  m_TagString: death
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ GameObject:
   - 114: {fileID: 11406668}
   m_Layer: 0
   m_Name: spikes
-  m_TagString: death
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ GameObject:
   - 114: {fileID: 11451646}
   m_Layer: 0
   m_Name: spikes (1)
-  m_TagString: death
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
