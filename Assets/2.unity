@@ -619,6 +619,14 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 13753720, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.009933549
+      objectReference: {fileID: 0}
+    - target: {fileID: 13753720, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
+      propertyPath: m_AABB.m_Center.y
+      value: -1.0793374
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
   m_IsPrefabParent: 0
@@ -760,4 +768,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11299f58340051b49a1638778816286a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1258546328}
