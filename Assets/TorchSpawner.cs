@@ -7,7 +7,7 @@ public class TorchSpawner : MonoBehaviour {
     public GameObject torchPrefab;
     public Transform playerTransform;
 
-    float requiredDistance = 25;
+    float requiredDistance = 50;
 
     float gap = 30;
 
