@@ -6,6 +6,7 @@ public class DimensionManager : MonoBehaviour {
     public PlatformManager platformManager;
     public DimensionSwitchCamera dimensionCamera;
 	public SpikeManager spikeManager;
+	public PlayerControll player;
 
     public bool is3D = true;
 
@@ -20,6 +21,9 @@ public class DimensionManager : MonoBehaviour {
 		if (spikeManager == null) {
 			Debug.LogError("Dimension manager needs a spike manager to switch behaviour on spikes");
 		}
+		if (player == null) {
+			Debug.LogError("Dimension manager needs a spike manager to switch behaviour on spikes");
+		}
 
 	}
 	
@@ -30,6 +34,7 @@ public class DimensionManager : MonoBehaviour {
             platformManager.ChangeDimensions(is3D);
             dimensionCamera.ChangeDimensions(is3D);
 			spikeManager.ChangeDimensions (is3D);
+			player.ChangeDimensions (is3D);
         }
 	}
 }

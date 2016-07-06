@@ -20,6 +20,11 @@ public class PlayerControll : MonoBehaviour {
 
 	private CharacterController controller;
 
+	private bool is3d = true;
+	private Transform lastTouched=null;
+
+
+
 	// Use this for initialization
 	void Start () {
 		xSpeed = speed;
@@ -71,6 +76,19 @@ public class PlayerControll : MonoBehaviour {
 		moveDirection.y -= gravity * Time.deltaTime;
 		controller.Move (moveDirection * Time.deltaTime);
 
+	}
+
+	public void ChangeDimensions(bool is3d){
+		this.is3d = is3d;
+		if (lastTouched && controller.isGrounded && is3d) {
+			controller.Move (new Vector3 (0, 0, lastTouched.position.z - controller.transform.position.z));
+		}
+	}
+
+	void OnControllerColliderHit(ControllerColliderHit platform){
+		if (platform.gameObject.tag == "platform") {
+			lastTouched = platform.transform;
+		}
 	}
 
 
