@@ -16,6 +16,6 @@ public class UiActions : MonoBehaviour {
 
     public void StartGame() {
         Debug.Log("Start game");
-        SceneManager.LoadScene("scene");
+        SceneManager.LoadScene("1");
     }
 }
