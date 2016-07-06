@@ -3,12 +3,17 @@ using System.Collections;
 
 public class KillWhenBelow : MonoBehaviour {
 
-    public float height;
+    public float KillHeight { get; set; }
+    public float ScreamHeight { get; set; } 
 
 	void Update () {
-	    if (transform.position.y < height) {
-            gameObject.SendMessage("Killed");
-            Destroy(gameObject);
-        }
+        if (transform.position.y < ScreamHeight)
+        {
+            //random cgj-screamer
+            if (transform.position.y < KillHeight)
+            {
+                gameObject.SendMessage("Killed");
+            }
+        } 
 	}
 }
