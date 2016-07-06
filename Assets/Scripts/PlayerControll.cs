@@ -74,10 +74,10 @@ public class PlayerControll : MonoBehaviour {
 	}
 
 
-	void OnTriggerEnter (Collider col)
+	void OnTriggerEnter(Collider col)
 	{
 		Debug.Log ("test3");
-        if (col.gameObject.tag == "platform" || col.gameObject.tag == "death")
+        if (col.gameObject.tag == "platform" || col.gameObject.tag == "spike")
 		{
 			//Set Death animation
 			Debug.Log("test");
