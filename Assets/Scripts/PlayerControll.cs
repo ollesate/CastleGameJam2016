@@ -44,6 +44,9 @@ public class PlayerControll : MonoBehaviour {
 		float xInputAxis = (Input.GetAxis ("Horizontal"));
 		float zInputAxis = Globals.Is3D ? Input.GetAxis ("Vertical") : 0f;
 
+
+
+
 		if (controller.isGrounded) {
 			moveDirection = new Vector3 (xInputAxis, 0, zInputAxis);
 			moveDirection = transform.TransformDirection (moveDirection);
@@ -73,13 +76,18 @@ public class PlayerControll : MonoBehaviour {
 			//moveDirection *= speed;
 			moveDirection.y = tempY;
 		}
-
-        animator.SetFloat("Speed", Math.Abs(controller.velocity.x/4));
+		float speedMagnitude = new Vector3 (controller.velocity.x/xSpeed, 0, controller.velocity.z/zSpeed).magnitude;
+		animator.SetFloat("Speed", speedMagnitude);
+		Debug.Log (speedMagnitude);
 
 		//Rotation towards vector direction
 
 
 		moveDirection.y -= gravity * Time.deltaTime;
+
+		if (Math.Abs (moveDirection.x) > 0.1 || Math.Abs (moveDirection.z) > 0.1) {
+			gameObject.transform.GetChild (0).rotation = Quaternion.LookRotation (new Vector3 (-moveDirection.x, 0, -moveDirection.z).normalized);
+		}
 		controller.Move (moveDirection * Time.deltaTime);
 
 	}
