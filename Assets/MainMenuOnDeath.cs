@@ -8,6 +8,7 @@ public class MainMenuOnDeath : MonoBehaviour {
     {
         Debug.Log("Change scene to main menu");
         //play death animation
+        gameObject.GetComponent<PlayerControll>().CanControlCharacter(false);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("MainMenu");
     }
