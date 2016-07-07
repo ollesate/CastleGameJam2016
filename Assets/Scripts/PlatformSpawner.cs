@@ -4,6 +4,10 @@ using System.Collections.Generic;
 
 public class PlatformSpawner : MonoBehaviour {
 
+    public bool endless;
+    public int nrOfPlatforms = 3;
+
+    public GameObject finishPlatform;
     public Transform player;
     public GameObject[] platforms;
 
@@ -16,6 +20,10 @@ public class PlatformSpawner : MonoBehaviour {
     private bool is3D = true;
     private float gap = 2.5f;
 
+
+
+    private int spawnedPlatforms;
+
 	// Use this for initialization
 	void Start () {
         initialZ = transform.position.z;
@@ -23,11 +31,21 @@ public class PlatformSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (player.position.x > transform.position.x - spawnDistance) {
+        if ((endless | (spawnedPlatforms <= nrOfPlatforms))
+            && player.position.x > transform.position.x - spawnDistance) {
             float randomZ = Random.Range(-deltaZ, deltaZ) + initialZ;
-            SpawnRandom(randomZ);
+            if (!endless && spawnedPlatforms == nrOfPlatforms) {
+                SpawnFinish(randomZ);
+            } else {
+                SpawnRandom(randomZ);
+            }
+            
         }
 	}
+
+    public void SpawnFinish(float zPosition) {
+        Spawn(finishPlatform, zPosition);
+    }
 
     public void SpawnRandom(float zPosition) {
         int randIndex = Random.Range(0, platforms.Length);
@@ -35,6 +53,8 @@ public class PlatformSpawner : MonoBehaviour {
     }
 
     void Spawn(GameObject go, float z) {
+        spawnedPlatforms++;
+
         // Spawn objects and change the dimension
         GameObject spawn = (GameObject)Instantiate(go, new Vector3(transform.position.x, transform.position.y, z), transform.rotation);
         PlatformScript [] ps  = spawn.GetComponentsInChildren<PlatformScript>();
