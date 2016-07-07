@@ -33,7 +33,7 @@ public class DimensionManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (Input.GetButton("Fire1") && !dimensionCamera.IsAnimating()) {
+	    if (Input.GetButton("Fire2") && !dimensionCamera.IsAnimating()) {
             is3D = !is3D;
             platformManager.ChangeDimensions(is3D);
             dimensionCamera.ChangeDimensions(is3D);
