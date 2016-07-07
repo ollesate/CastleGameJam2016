@@ -29,6 +29,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420230}
+  - 114: {fileID: 11454752}
   m_Layer: 0
   m_Name: PolePattern
   m_TagString: Untagged
@@ -235,6 +236,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da9e197a123947c1b1e2996e8de848e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11454752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b661e880e1555c4baa493b1b8f53b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 0
 --- !u!114 &11455666
 MonoBehaviour:
   m_ObjectHideFlags: 1
