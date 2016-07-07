@@ -13,6 +13,17 @@ public class UiActions : MonoBehaviour {
 
     private void LoadFirstLevel()
     {
-        SceneManager.LoadScene("1");
+        SceneManager.LoadScene("2");
     }
+
+	public void StartTutorial()
+	{
+		GameObject.Find("CutScene").GetComponent<MoveForward>().enabled = true;
+		Invoke("LoadTutorialLevel", 4);
+	}
+
+	private void LoadTutorialLevel()
+	{
+		SceneManager.LoadScene("1");
+	}
 }
