@@ -4,18 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class UiActions : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-    public void StartGame() {
-        Debug.Log("Start game");
+    public void StartGame()
+    {
+        GameObject.Find("CutScene").GetComponent<MoveForward>().enabled = true;
+        Invoke("LoadFirstLevel", 4);
+    }
+
+    private void LoadFirstLevel()
+    {
         SceneManager.LoadScene("1");
     }
 }
