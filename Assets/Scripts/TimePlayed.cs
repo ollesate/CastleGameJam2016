@@ -15,7 +15,7 @@ public class TimePlayed : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		time = Time.realtimeSinceStartup;
+		time = Time.time;
 		if (time >= timeStamp+updateTime) {
 			timeStamp = time;
 			int min = (int)((time / 60) % 60);
