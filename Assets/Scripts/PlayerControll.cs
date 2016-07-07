@@ -27,7 +27,8 @@ public class PlayerControll : MonoBehaviour {
     private bool canControlCharacter = true;
     private bool justJumped = false;
 
-
+    public float jumpCooldown = 1.6f;
+    private float timestamp;
 	// Use this for initialization
 	void Start () {
 		xSpeed = speed;
@@ -63,14 +64,17 @@ public class PlayerControll : MonoBehaviour {
 			moveDirection.x *= xSpeed;
 			moveDirection.z *= zSpeed;
 
+            
 			if (Input.GetButton ("Jump")) {
-                if (canControlCharacter)
+                if (Time.time > timestamp + jumpCooldown)
                 {
-                    moveDirection.y = jump;
-                    justJumped = true;
+                    timestamp = Time.time;
+                    if (canControlCharacter)
+                    {
+                        moveDirection.y = jump;
+                        justJumped = true;
+                    }
                 }
-				    
-
 			}
 		} else {
 			float tempY = moveDirection.y; // probably not needed, haven't tried to fix this (saves it before modification, adds it again after)
