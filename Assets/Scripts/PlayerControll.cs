@@ -159,4 +159,8 @@ public class PlayerControll : MonoBehaviour {
             gameObject.SendMessage("Killed");
 		}
 	}
+
+	public bool canControl(){
+		return canControlCharacter;
+	}
 } 
