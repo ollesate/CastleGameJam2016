@@ -6,7 +6,7 @@ public class Spikes : MonoBehaviour {
     public float speed = 7.0f;
     private float initialY;
 	Collider[] colliders;
-	float[] sizes = {55,510};
+	float[] sizes = {55,1600};
 
     void Start()
     {
