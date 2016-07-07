@@ -543,7 +543,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 490620}
   m_Layer: 0
-  m_Name: LevelRoot 1
+  m_Name: LevelRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1915,6 +1915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508a125aa6c8acf4287e79d62c3720eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  losePopupPrefab: {fileID: 0}
 --- !u!114 &11477514
 MonoBehaviour:
   m_ObjectHideFlags: 1
