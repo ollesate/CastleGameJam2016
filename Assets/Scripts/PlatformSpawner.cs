@@ -11,7 +11,7 @@ public class PlatformSpawner : MonoBehaviour {
     private float initialZ;
     private float deltaZ = 5;
 
-    private float spawnDistance = 20;
+    private float spawnDistance = 30;
 
     private bool is3D = true;
     private float gap = 2.5f;
