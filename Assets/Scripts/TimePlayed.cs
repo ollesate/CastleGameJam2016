@@ -20,7 +20,7 @@ public class TimePlayed : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (playerController.canControll()) {
+		if (playerController.canControl()) {
 			time = Time.time - startTime;
 			if (time >= timeStamp + updateTime) {
 				timeStamp = time;
