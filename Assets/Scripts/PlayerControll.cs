@@ -25,6 +25,7 @@ public class PlayerControll : MonoBehaviour {
 	private bool is3d = true;
 	private Transform lastTouched=null;
     private bool canControlCharacter = true;
+    private bool justJumped = false;
 
 
 	// Use this for initialization
@@ -48,7 +49,7 @@ public class PlayerControll : MonoBehaviour {
 
         float xInputAxis = 0f;
         float zInputAxis = 0f;
-
+        justJumped = false;
         if (canControlCharacter) { 
 		    xInputAxis = (Input.GetAxis ("Horizontal"));
 		    zInputAxis = Globals.Is3D ? Input.GetAxis ("Vertical") : 0f;
@@ -64,7 +65,12 @@ public class PlayerControll : MonoBehaviour {
 
 			if (Input.GetButton ("Jump")) {
                 if (canControlCharacter)
-				    moveDirection.y = jump;
+                {
+                    moveDirection.y = jump;
+                    justJumped = true;
+                }
+				    
+
 			}
 		} else {
 			float tempY = moveDirection.y; // probably not needed, haven't tried to fix this (saves it before modification, adds it again after)
@@ -101,7 +107,25 @@ public class PlayerControll : MonoBehaviour {
 		}
 		controller.Move (moveDirection * Time.deltaTime);
 
-	}
+        if (justJumped == true)
+        {
+            animator.SetBool("Jumped", true);
+        }
+        else
+        {
+            animator.SetBool("Jumped", false);
+        }
+
+        if (controller.isGrounded == true)
+        {
+            animator.SetBool("IsGrounded", true);
+        }
+        else
+        {
+            animator.SetBool("IsGrounded", false);
+        }
+
+    }
 
 	public void ChangeDimensions(bool is3d){
 		this.is3d = is3d;

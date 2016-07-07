@@ -22,7 +22,7 @@ public class TimePlayed : MonoBehaviour {
 			int sek = (int)(time % 60);
 			int hundreth = (int)(time * 100 % 100);
 			timer.text = (min<10 ? "0"+min : ""+min) +":"+(sek<10 ? "0"+sek : ""+sek) + ":" +(hundreth<10 ? "0"+hundreth : ""+hundreth);
-			Debug.Log (time);
+			//Debug.Log (time);
 		}
 	}
 
