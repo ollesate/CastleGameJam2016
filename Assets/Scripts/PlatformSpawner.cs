@@ -13,7 +13,7 @@ public class PlatformSpawner : MonoBehaviour {
 
     private float spawnDistance = 20;
 
-    private bool is3D;
+    private bool is3D = true;
 
 	// Use this for initialization
 	void Start () {
