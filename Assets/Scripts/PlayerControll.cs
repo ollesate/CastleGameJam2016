@@ -27,8 +27,8 @@ public class PlayerControll : MonoBehaviour {
     private bool canControlCharacter = true;
     private bool justJumped = false;
 
-    public float jumpCooldown = 1.6f;
-    private float timestamp;
+    private float jumpCooldown = 0.1f;
+    private float jumpTimer;
 	// Use this for initialization
 	void Start () {
 		xSpeed = speed;
@@ -63,12 +63,13 @@ public class PlayerControll : MonoBehaviour {
 			moveDirection = transform.TransformDirection (moveDirection);
 			moveDirection.x *= xSpeed;
 			moveDirection.z *= zSpeed;
-
+            jumpTimer += Time.deltaTime;
             
-			if (Input.GetButton ("Jump")) {
-                if (Time.time > timestamp + jumpCooldown)
+            
+			if (Input.GetButtonDown ("Jump")) {
+                if (jumpTimer > jumpCooldown)
                 {
-                    timestamp = Time.time;
+                    jumpTimer = 0;
                     if (canControlCharacter)
                     {
                         moveDirection.y = jump;
