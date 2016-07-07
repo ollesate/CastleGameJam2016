@@ -922,6 +922,7 @@ MonoBehaviour:
   airSpeedAcceleration: 0.1
   maxAirSpeed: 3
   gravity: 10
+  jumpCooldown: 1.6
 --- !u!114 &1258546327
 MonoBehaviour:
   m_ObjectHideFlags: 0
