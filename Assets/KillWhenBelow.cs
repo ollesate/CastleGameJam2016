@@ -3,18 +3,36 @@ using System.Collections;
 
 public class KillWhenBelow : MonoBehaviour {
 
-    public float KillHeight { get; set; }
-    public float ScreamHeight { get; set; } 
+    public float killHeight = -5;
+    public float screamHeight = -1;
+
+    private bool soundNotPlayed = true;
+    private bool killNotSent = true;
+    AudioSource scream;
+
+    void Start()
+    {
+        scream = GetComponents<AudioSource>()[0];
+    }
 
 	void Update () {
-        if (transform.position.y < ScreamHeight)
-        {
-            //random cgj-screamer
-            if (transform.position.y < KillHeight)
+        if (killNotSent)
+        { 
+            if (transform.position.y < screamHeight)
             {
-                Debug.Log("Player falled to his death");
-                gameObject.SendMessage("Killed");
+                if (soundNotPlayed)
+                {
+                    scream.Play();
+                    soundNotPlayed = false;
+                }
+                if (transform.position.y < killHeight)
+                {
+                    scream.Stop();
+                    killNotSent = false;
+                    Debug.Log("Player falled to his death");
+                    gameObject.SendMessage("Killed");
+                }
             }
-        } 
+        }
 	}
 }
