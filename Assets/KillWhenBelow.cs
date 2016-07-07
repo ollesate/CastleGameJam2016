@@ -3,8 +3,8 @@ using System.Collections;
 
 public class KillWhenBelow : MonoBehaviour {
 
-    public float killHeight = -5;
-    public float screamHeight = -1;
+    private float killHeight = -20;
+    private float screamHeight = 0;
 
     private bool soundNotPlayed = true;
     private bool killNotSent = true;
