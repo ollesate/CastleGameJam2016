@@ -688,7 +688,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 417830, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.4152894
+      value: -4.38
       objectReference: {fileID: 0}
     - target: {fileID: 417830, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
       propertyPath: m_LocalPosition.y
@@ -717,6 +717,18 @@ Prefab:
     - target: {fileID: 417830, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 13729114, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.27409518
+      objectReference: {fileID: 0}
+    - target: {fileID: 13729114, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
+      propertyPath: m_AABB.m_Extent.x
+      value: 1.0673434
+      objectReference: {fileID: 0}
+    - target: {fileID: 13729114, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
+      propertyPath: m_AABB.m_Center.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
@@ -760,6 +772,7 @@ MonoBehaviour:
   dimensionCamera: {fileID: 592345835}
   spikeManager: {fileID: 672411840}
   player: {fileID: 970627945}
+  platformSpawner: {fileID: 0}
   is3D: 1
 --- !u!4 &2081490244
 Transform:
