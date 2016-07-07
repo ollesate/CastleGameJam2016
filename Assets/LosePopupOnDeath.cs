@@ -14,6 +14,7 @@ public class LosePopupOnDeath : MonoBehaviour {
             Debug.Log("Player was killed. Show popup");
             //play death animation
             GetComponent<Animator>().SetBool("IsDead", true);
+            GetComponents<AudioSource>()[1].Play();
             gameObject.GetComponent<PlayerControll>().CanControlCharacter(false);
             yield return new WaitForSeconds(1);
             Instantiate(losePopupPrefab);
