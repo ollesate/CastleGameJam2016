@@ -730,6 +730,10 @@ Prefab:
       propertyPath: m_AABB.m_Center.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11488276, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
+      propertyPath: losePopupPrefab
+      value: 
+      objectReference: {fileID: 163976, guid: eee406aa9e83e9d4bbe2445a58df3f65, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7ad3b24e8b6eb45afdf996ce1402f7, type: 2}
   m_IsPrefabParent: 0
