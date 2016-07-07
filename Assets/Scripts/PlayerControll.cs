@@ -24,7 +24,7 @@ public class PlayerControll : MonoBehaviour {
 
 	private bool is3d = true;
 	private Transform lastTouched=null;
-
+    private bool canControlCharacter = true;
 
 
 	// Use this for initialization
@@ -37,13 +37,22 @@ public class PlayerControll : MonoBehaviour {
         //Animation
         animator = GetComponent<Animator>();
 	}
-		
+
+    public void CanControlCharacter(bool canControl)
+    {
+        canControlCharacter = canControl;
+    }
+
 	// Update is called once per frame
 	void Update () {
-		
-		float xInputAxis = (Input.GetAxis ("Horizontal"));
-		float zInputAxis = Globals.Is3D ? Input.GetAxis ("Vertical") : 0f;
 
+        float xInputAxis = 0f;
+        float zInputAxis = 0f;
+
+        if (canControlCharacter) { 
+		    xInputAxis = (Input.GetAxis ("Horizontal"));
+		    zInputAxis = Globals.Is3D ? Input.GetAxis ("Vertical") : 0f;
+        }
 
 
 
@@ -52,8 +61,10 @@ public class PlayerControll : MonoBehaviour {
 			moveDirection = transform.TransformDirection (moveDirection);
 			moveDirection.x *= xSpeed;
 			moveDirection.z *= zSpeed;
+
 			if (Input.GetButton ("Jump")) {
-				moveDirection.y = jump;
+                if (canControlCharacter)
+				    moveDirection.y = jump;
 			}
 		} else {
 			float tempY = moveDirection.y; // probably not needed, haven't tried to fix this (saves it before modification, adds it again after)
