@@ -67,17 +67,22 @@ public class PlayerControll : MonoBehaviour {
             
             
 			if (Input.GetButtonDown ("Jump")) {
-                if (jumpTimer > jumpCooldown)
-                {
-                    jumpTimer = 0;
-                    if (canControlCharacter)
-                    {
-                        moveDirection.y = jump;
-                        justJumped = true;
-                    }
-                }
-			}
+				if (jumpTimer > jumpCooldown) {
+					jumpTimer = 0;
+					if (canControlCharacter) {
+						moveDirection.y = jump;
+						justJumped = true;
+					}
+				}
+			} 
 		} else {
+			if (Input.GetButtonUp ("Jump")) {
+				if (controller.velocity.y > 0){
+					Debug.Log ("moveDirection.y before: " + moveDirection.y);
+					moveDirection.y = (float) (controller.velocity.y * 0.5);
+					Debug.Log ("moveDirection.y after: " + moveDirection.y);
+				}
+			}
 			float tempY = moveDirection.y; // probably not needed, haven't tried to fix this (saves it before modification, adds it again after)
 
 			float moveX = moveDirection.x;
