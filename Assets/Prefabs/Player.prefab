@@ -1203,10 +1203,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  jump: 5
+  jump: 10
   airSpeedAcceleration: 0.1
   maxAirSpeed: 3
-  gravity: 10
+  gravity: 20
 --- !u!136 &13602176
 CapsuleCollider:
   m_ObjectHideFlags: 1
