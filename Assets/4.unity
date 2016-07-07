@@ -85,6 +85,18 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &59081153 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11499144, guid: b46c1cdf7b7f79d4b8708bbb5bbf8367,
+    type: 2}
+  m_PrefabInternal: {fileID: 1226460663}
+  m_Script: {fileID: 11500000, guid: a3549597e1e56453e93db8ef9e32426c, type: 3}
+--- !u!114 &439314814 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11419548, guid: b46c1cdf7b7f79d4b8708bbb5bbf8367,
+    type: 2}
+  m_PrefabInternal: {fileID: 1226460663}
+  m_Script: {fileID: 11500000, guid: 70324a0eceb34434c89a040f3a5d866c, type: 3}
 --- !u!1001 &519013437
 Prefab:
   m_ObjectHideFlags: 0
@@ -140,6 +152,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 0.14036046
       objectReference: {fileID: 0}
+    - target: {fileID: 11451464, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: platformSpawner
+      value: 
+      objectReference: {fileID: 439314814}
+    - target: {fileID: 11451464, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: platformManager
+      value: 
+      objectReference: {fileID: 59081153}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
   m_IsPrefabParent: 0
@@ -192,6 +212,10 @@ Prefab:
       objectReference: {fileID: 519013438}
     - target: {fileID: 11419548, guid: b46c1cdf7b7f79d4b8708bbb5bbf8367, type: 2}
       propertyPath: endless
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419548, guid: b46c1cdf7b7f79d4b8708bbb5bbf8367, type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
