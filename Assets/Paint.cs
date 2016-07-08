@@ -8,9 +8,4 @@ public class Paint : MonoBehaviour {
 	void Start () {
         gameObject.GetComponent<Renderer>().material.color = color;
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

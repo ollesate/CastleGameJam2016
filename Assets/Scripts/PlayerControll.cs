@@ -79,9 +79,7 @@ public class PlayerControll : MonoBehaviour {
 		} else {
             if (Input.GetButtonUp("Jump")) {
                 if (controller.velocity.y > 0) {
-                    Debug.Log("moveDirection.y before: " + moveDirection.y);
                     moveDirection.y = (float)(controller.velocity.y * .5f);
-                    Debug.Log("moveDirection.y after: " + moveDirection.y);
                 }
             }
             float tempY = moveDirection.y; // probably not needed, haven't tried to fix this (saves it before modification, adds it again after)

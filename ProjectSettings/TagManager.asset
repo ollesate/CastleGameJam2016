@@ -8,6 +8,7 @@ TagManager:
   - platform
   - spike
   - deathwall
+  - dragon
   layers:
   - Default
   - TransparentFX
