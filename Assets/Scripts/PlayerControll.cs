@@ -138,7 +138,7 @@ public class PlayerControll : MonoBehaviour {
 
 	public void ChangeDimensions(bool is3d){
 		this.is3d = is3d;
-		if (lastTouched && controller.isGrounded && is3d) {
+		if (lastTouched && is3d) {
 			controller.Move (new Vector3 (0, 0, lastTouched.position.z - controller.transform.position.z));
 		}
 	}
