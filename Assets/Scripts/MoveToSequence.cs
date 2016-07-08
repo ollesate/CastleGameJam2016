@@ -6,6 +6,8 @@ public class MoveToSequence : MonoBehaviour {
     public Transform[] targetPoints;
     private bool animComplete;
 
+    public bool isFinished;
+
 	// Use this for initialization
 	void Start () {
         StartCoroutine(StartSequence());
@@ -17,6 +19,7 @@ public class MoveToSequence : MonoBehaviour {
             animComplete = false;
             yield return new WaitUntil(isAnimationComplete);
         }
+        isFinished = true;
     }
 
     bool isAnimationComplete() {

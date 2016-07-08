@@ -24,4 +24,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/7.unity
   - enabled: 1
+    path: Assets/8.unity
+  - enabled: 1
     path: Assets/endless.unity
