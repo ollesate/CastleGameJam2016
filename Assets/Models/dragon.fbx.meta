@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: 27c936bdc9ff79f43bd4d154fc867288
+timeCreated: 1468001109
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BotJaw1
+    100002: BotJaw1_end
+    100004: BotJaw2
+    100006: Cube
+    100008: //RootNode
+    100010: DragonArma
+    100012: LowerBackLeg.L
+    100014: LowerBackLeg.L_end
+    100016: LowerBackLeg.R
+    100018: LowerBackLeg.R_end
+    100020: LowerFrontLeg.L
+    100022: LowerFrontLeg.L_end
+    100024: LowerFrontLeg.R
+    100026: LowerFrontLeg.R_end
+    100028: LowerTongue
+    100030: LowerTongue_end
+    100032: LowerWing.L
+    100034: LowerWing.R
+    100036: MiddleWing.L
+    100038: MiddleWing.R
+    100040: Neck
+    100042: Tail1
+    100044: Tail2
+    100046: Tail2_end
+    100048: TopJaw1
+    100050: TopJaw1_end
+    100052: TopJaw2
+    100054: Torso1
+    100056: Torso2
+    100058: Torso3
+    100060: UpperBackLeg.L
+    100062: UpperBackLeg.R
+    100064: UpperFrontLeg.L
+    100066: UpperFrontLeg.R
+    100068: UpperTongue
+    100070: UpperWing.L
+    100072: UpperWing.L_end
+    100074: UpperWing.R
+    100076: UpperWing.R_end
+    400000: BotJaw1
+    400002: BotJaw1_end
+    400004: BotJaw2
+    400006: Cube
+    400008: //RootNode
+    400010: DragonArma
+    400012: LowerBackLeg.L
+    400014: LowerBackLeg.L_end
+    400016: LowerBackLeg.R
+    400018: LowerBackLeg.R_end
+    400020: LowerFrontLeg.L
+    400022: LowerFrontLeg.L_end
+    400024: LowerFrontLeg.R
+    400026: LowerFrontLeg.R_end
+    400028: LowerTongue
+    400030: LowerTongue_end
+    400032: LowerWing.L
+    400034: LowerWing.R
+    400036: MiddleWing.L
+    400038: MiddleWing.R
+    400040: Neck
+    400042: Tail1
+    400044: Tail2
+    400046: Tail2_end
+    400048: TopJaw1
+    400050: TopJaw1_end
+    400052: TopJaw2
+    400054: Torso1
+    400056: Torso2
+    400058: Torso3
+    400060: UpperBackLeg.L
+    400062: UpperBackLeg.R
+    400064: UpperFrontLeg.L
+    400066: UpperFrontLeg.R
+    400068: UpperTongue
+    400070: UpperWing.L
+    400072: UpperWing.L_end
+    400074: UpperWing.R
+    400076: UpperWing.R_end
+    4300000: Cube
+    7400000: DragonArma|Eat
+    7400002: DragonArma|Flying
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: DragonArma|Eat
+      takeName: DragonArma|Eat
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: DragonArma
+        weight: 1
+      - path: DragonArma/Torso3
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.L
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.L/MiddleWing.L
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.L/MiddleWing.L/UpperWing.L
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.L/MiddleWing.L/UpperWing.L/UpperWing.L_end
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.R
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.R/MiddleWing.R
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.R/MiddleWing.R/UpperWing.R
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.R/MiddleWing.R/UpperWing.R/UpperWing.R_end
+        weight: 1
+      - path: DragonArma/Torso3/Tail1
+        weight: 1
+      - path: DragonArma/Torso3/Tail1/Tail2
+        weight: 1
+      - path: DragonArma/Torso3/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/BotJaw2
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/BotJaw2/BotJaw1
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/BotJaw2/BotJaw1/BotJaw1_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/TopJaw2
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/TopJaw2/TopJaw1
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/TopJaw2/TopJaw1/TopJaw1_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/UpperTongue
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/UpperTongue/LowerTongue
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/UpperTongue/LowerTongue/LowerTongue_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.L
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.L/LowerFrontLeg.L
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.L/LowerFrontLeg.L/LowerFrontLeg.L_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.R
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.R/LowerFrontLeg.R
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.R/LowerFrontLeg.R/LowerFrontLeg.R_end
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.L
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.L/LowerBackLeg.L
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.L/LowerBackLeg.L/LowerBackLeg.L_end
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.R
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.R/LowerBackLeg.R
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.R/LowerBackLeg.R/LowerBackLeg.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DragonArma|Flying
+      takeName: DragonArma|Flying
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: DragonArma
+        weight: 1
+      - path: DragonArma/Torso3
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.L
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.L/MiddleWing.L
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.L/MiddleWing.L/UpperWing.L
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.L/MiddleWing.L/UpperWing.L/UpperWing.L_end
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.R
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.R/MiddleWing.R
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.R/MiddleWing.R/UpperWing.R
+        weight: 1
+      - path: DragonArma/Torso3/LowerWing.R/MiddleWing.R/UpperWing.R/UpperWing.R_end
+        weight: 1
+      - path: DragonArma/Torso3/Tail1
+        weight: 1
+      - path: DragonArma/Torso3/Tail1/Tail2
+        weight: 1
+      - path: DragonArma/Torso3/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/BotJaw2
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/BotJaw2/BotJaw1
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/BotJaw2/BotJaw1/BotJaw1_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/TopJaw2
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/TopJaw2/TopJaw1
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/TopJaw2/TopJaw1/TopJaw1_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/UpperTongue
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/UpperTongue/LowerTongue
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/Torso1/Neck/UpperTongue/LowerTongue/LowerTongue_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.L
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.L/LowerFrontLeg.L
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.L/LowerFrontLeg.L/LowerFrontLeg.L_end
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.R
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.R/LowerFrontLeg.R
+        weight: 1
+      - path: DragonArma/Torso3/Torso2/UpperFrontLeg.R/LowerFrontLeg.R/LowerFrontLeg.R_end
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.L
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.L/LowerBackLeg.L
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.L/LowerBackLeg.L/LowerBackLeg.L_end
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.R
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.R/LowerBackLeg.R
+        weight: 1
+      - path: DragonArma/Torso3/UpperBackLeg.R/LowerBackLeg.R/LowerBackLeg.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
