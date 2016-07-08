@@ -471,7 +471,7 @@ GameObject:
   - 33: {fileID: 3362558}
   - 65: {fileID: 6572096}
   - 114: {fileID: 11412934}
-  - 114: {fileID: 11455412}
+  - 114: {fileID: 11499338}
   m_Layer: 0
   m_Name: Dragon wall
   m_TagString: deathwall
@@ -3740,7 +3740,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalPosition: {x: -17.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -5155,7 +5155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151144}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -2.05, y: 3.31, z: 0}
+  m_LocalPosition: {x: 0.35, y: 3.31, z: 0}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_Children:
@@ -8088,7 +8088,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 5, z: 15}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.02, y: 0, z: 0}
 --- !u!81 &8173930
 AudioListener:
   m_ObjectHideFlags: 1
@@ -8959,18 +8959,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3d0acd0ccdd4942b98252c5f9f1cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11455412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2aae47fb87b8349a53c79b745db36d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4.1
 --- !u!114 &11457424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9099,6 +9087,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   width: 0
+--- !u!114 &11499338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b73af236f24ac4ea3b770517833347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 455092}
 --- !u!114 &11499344
 MonoBehaviour:
   m_ObjectHideFlags: 1
