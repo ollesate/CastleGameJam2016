@@ -11,6 +11,11 @@ public class UiActions : MonoBehaviour {
         Invoke("LoadFirstLevel", 4);
     }
 
+    public void StartEndless() {
+        GameObject.Find("CutScene").GetComponent<MoveForward>().enabled = true;
+        Invoke("LoadEndlessLevel", 4);
+    }
+
     private void LoadFirstLevel()
     {
         SceneManager.LoadScene("2");
@@ -26,4 +31,9 @@ public class UiActions : MonoBehaviour {
 	{
 		SceneManager.LoadScene("1");
 	}
+
+    private void LoadEndlessLevel() {
+        SceneManager.LoadScene("endless");
+
+    }
 }
