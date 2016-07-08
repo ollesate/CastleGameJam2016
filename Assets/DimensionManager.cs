@@ -34,12 +34,16 @@ public class DimensionManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	    if (Input.GetButton("Fire2") && !dimensionCamera.IsAnimating()) {
-            is3D = !is3D;
-            platformManager.ChangeDimensions(is3D);
-            dimensionCamera.ChangeDimensions(is3D);
-			spikeManager.ChangeDimensions (is3D);
-			player.ChangeDimensions (is3D);
-            platformSpawner.ChangeDimensions(is3D);
+            ChangeDimension();
         }
 	}
+
+    public void ChangeDimension() {
+        is3D = !is3D;
+        platformManager.ChangeDimensions(is3D);
+        dimensionCamera.ChangeDimensions(is3D);
+        spikeManager.ChangeDimensions(is3D);
+        player.ChangeDimensions(is3D);
+        platformSpawner.ChangeDimensions(is3D);
+    }
 }
