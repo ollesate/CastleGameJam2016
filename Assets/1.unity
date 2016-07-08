@@ -608,6 +608,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11451464, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: platformManager
+      value: 
+      objectReference: {fileID: 1078597434}
+    - target: {fileID: 11451464, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: platformSpawner
+      value: 
+      objectReference: {fileID: 1155821906}
     - target: {fileID: 406282, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0.1403605
@@ -624,14 +632,6 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 0.14036047
       objectReference: {fileID: 0}
-    - target: {fileID: 11451464, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
-      propertyPath: platformManager
-      value: 
-      objectReference: {fileID: 1078597434}
-    - target: {fileID: 11451464, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
-      propertyPath: platformSpawner
-      value: 
-      objectReference: {fileID: 1155821906}
     - target: {fileID: 11455412, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
       propertyPath: m_Enabled
       value: 0
