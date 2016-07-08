@@ -3,8 +3,12 @@ using System.Collections;
 
 public class TorchSimulator : MonoBehaviour {
 
-    public int startingIntensity = 3;
+    private float startingIntensity = 3;
 	
+    void Start() {
+        startingIntensity = GetComponent<Light>().intensity;
+    }
+
 	// Update is called once per frame
 	void Update () {
         GetComponent<Light>().intensity = startingIntensity + (Mathf.Sin(Random.value));
