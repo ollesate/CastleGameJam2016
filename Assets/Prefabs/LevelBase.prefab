@@ -2288,7 +2288,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125914}
-  m_LocalRotation: {x: -0.1403605, y: 0.693036, z: 0.69303614, w: 0.14036047}
+  m_LocalRotation: {x: -0.14036049, y: 0.69303596, z: 0.6930361, w: 0.14036046}
   m_LocalPosition: {x: -8.300003, y: 36.68, z: -6.6399994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -90, y: 157.1015, z: 0}
@@ -3976,7 +3976,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

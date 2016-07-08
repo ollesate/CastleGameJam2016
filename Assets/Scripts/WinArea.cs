@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using Assets.Scripts;
 
 public class WinArea : MonoBehaviour {
 
@@ -18,7 +19,11 @@ public class WinArea : MonoBehaviour {
             StartCoroutine(rotateCam(cam, 3f * Time.timeScale));
             Invoke("LoadNextScene", 4f * Time.timeScale);
 
-            //
+            // Place player correctly if he is in 2D
+            if (!Globals.Is3D) {
+                Vector2 pos = col.gameObject.transform.position;
+                col.gameObject.transform.position = new Vector3(pos.x, pos.y, transform.position.z);
+            }
         }
             
     }
