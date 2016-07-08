@@ -416,6 +416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70324a0eceb34434c89a040f3a5d866c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endless: 0
+  nrOfPlatforms: 3
+  finishPlatform: {fileID: 0}
   player: {fileID: 501802771}
   platforms:
   - {fileID: 173640, guid: dc2a8b7911cc59e4e9510035c806b272, type: 2}
@@ -478,19 +481,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 406282, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.1403605
+      value: -0.14036049
       objectReference: {fileID: 0}
     - target: {fileID: 406282, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.693036
+      value: 0.69303596
       objectReference: {fileID: 0}
     - target: {fileID: 406282, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.69303614
+      value: 0.6930361
       objectReference: {fileID: 0}
     - target: {fileID: 406282, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.14036047
+      value: 0.14036046
       objectReference: {fileID: 0}
     - target: {fileID: 11451464, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
       propertyPath: platformManager

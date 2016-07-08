@@ -3,9 +3,9 @@ using System.Collections;
 
 public class RowSpawner : MonoBehaviour {
 
-    public float width;
+    private float width = 16f;
     public float spawnX;
-    public float spawnWithinXDistance = 100f;
+    private float spawnWithinXDistance = 50f;
     public Transform target;
     private GameObject copyGameObject;
 
@@ -19,6 +19,7 @@ public class RowSpawner : MonoBehaviour {
             spawnX += width;
             Vector3 spawnPos = transform.position + transform.right * spawnX;
             GameObject go = (GameObject)Instantiate(copyGameObject, spawnPos, transform.rotation);
+            go.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             go.transform.parent = transform;
             go.GetComponent<RowSpawner>().enabled = false;
             copyGameObject = go;
