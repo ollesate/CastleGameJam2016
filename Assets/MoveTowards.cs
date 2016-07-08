@@ -12,4 +12,8 @@ public class MoveTowards : MonoBehaviour {
         if (delta.magnitude < speed * Time.deltaTime) return;
         transform.position += delta.normalized * speed * Time.deltaTime;
 	}
+
+    void setTarget(Transform target) {
+        this.target = target;
+    }
 }

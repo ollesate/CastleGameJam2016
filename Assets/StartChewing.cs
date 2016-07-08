@@ -1,14 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class StartChewing : MonoBehaviour {
 
+    public delegate void EventHandler();
+    public event EventHandler OnMouthShut;
+    private bool isInJawZone;
+
     void OnTriggerEnter(Collider col)
     {
-        
         if (col.tag == "Player")
         {
-            Debug.Log("player enter");
+            isInJawZone = true;
+            StartCoroutine(closeAndShutJaws());
             GameObject.FindGameObjectWithTag("dragon").GetComponent<Animator>().SetBool("Chew", true);
         }
     }
@@ -17,8 +22,16 @@ public class StartChewing : MonoBehaviour {
     {
         if (col.tag == "Player")
         {
-            Debug.Log("player leave");
+            StopAllCoroutines();
+            isInJawZone = false;
             GameObject.FindGameObjectWithTag("dragon").GetComponent<Animator>().SetBool("Chew", false);
+        }
+    }
+
+    private IEnumerator closeAndShutJaws() {
+        while(isInJawZone) {
+            yield return new WaitForSeconds(1f);
+            OnMouthShut();
         }
     }
 }
