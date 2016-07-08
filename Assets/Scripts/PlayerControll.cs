@@ -80,7 +80,7 @@ public class PlayerControll : MonoBehaviour {
             if (Input.GetButtonUp("Jump")) {
                 if (controller.velocity.y > 0) {
                     Debug.Log("moveDirection.y before: " + moveDirection.y);
-                    moveDirection.y = (float)(controller.velocity.y * 1f);
+                    moveDirection.y = (float)(controller.velocity.y * .5f);
                     Debug.Log("moveDirection.y after: " + moveDirection.y);
                 }
             }
