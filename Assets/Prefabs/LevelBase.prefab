@@ -282,7 +282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &113434
 GameObject:
   m_ObjectHideFlags: 1
@@ -2397,7 +2397,7 @@ GameObject:
   - 114: {fileID: 11481458}
   - 114: {fileID: 11487236}
   m_Layer: 5
-  m_Name: TimeGUI
+  m_Name: LevelGUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2475,9 +2475,9 @@ GameObject:
   - 224: {fileID: 22418218}
   - 222: {fileID: 22201820}
   - 114: {fileID: 11439238}
-  - 114: {fileID: 11457424}
+  - 114: {fileID: 11447154}
   m_Layer: 5
-  m_Name: Time
+  m_Name: LevelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8949,7 +8949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.71323526, g: 0.71323526, b: 0.71323526, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8958,7 +8958,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -8984,6 +8984,17 @@ MonoBehaviour:
   speed: 4
   maxAirSpeed: 3
   gravity: 20
+--- !u!114 &11447154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfbf45992791e043b4a3329b8981b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11449438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9031,17 +9042,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b3d0acd0ccdd4942b98252c5f9f1cab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11457424
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5478152c2790c4cbeb68f44c5aa068a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11463372
@@ -12850,8 +12850,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 20, y: -20}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 30, y: -50}
+  m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22436352
 RectTransform:
