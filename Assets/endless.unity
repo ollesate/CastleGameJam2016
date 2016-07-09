@@ -217,6 +217,30 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 0.14036047
       objectReference: {fileID: 0}
+    - target: {fileID: 112252, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22436352, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400198, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400198, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400198, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182408, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 589cfac0f1122b143898d7d4401cd1f6, type: 2}
   m_IsPrefabParent: 0
